@@ -1,0 +1,9 @@
+--no-save
+--no-private
+--title Padrino Cross-Site Request Forgery
+--markup-provider redcarpet
+--markup markdown
+lib/**/*.rb
+-
+README.md
+LICENSE
