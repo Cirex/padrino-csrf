@@ -46,9 +46,11 @@ module Padrino
       # @private
       def route(verb, path, options = {}, &block)
         if REQUEST_BLACKLIST.include?(verb)
-          options[:protect] = settings.prevent_request_forgery if options[:protect] == nil
+          if options[:protect].nil?
+             options[:protect] = settings.prevent_request_forgery if settings.prevent_request_forgery?
+          end
         else
-          options.delete(:protect)
+          options.delete :protect
         end
 
         super(verb, path, options, &block)

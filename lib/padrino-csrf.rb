@@ -8,8 +8,7 @@ module Padrino
   module CSRF
     REQUEST_BLACKLIST = %w(POST PUT DELETE)
 
-    class InvalidToken < RuntimeError 
-      # @private
+    class InvalidToken < RuntimeError
       def http_status
         403
       end
