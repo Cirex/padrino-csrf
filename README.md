@@ -1,3 +1,5 @@
+**Similar functionallity added to Padrino. This gem will no longer be maintained.**
+
 ### Overview
 
 Padrino CSRF is a plugin for the [Padrino](https://github.com/padrino/padrino-framework) web framework which adds [cross-site request forgery](http://en.wikipedia.org/wiki/Cross-site_request_forgery) protection.
@@ -63,4 +65,4 @@ end
 
 ### Copyright
 
-Copyright © 2012 Benjamin Bloch (Cirex). See LICENSE for details.
+Copyright ï¿½ 2012 Benjamin Bloch (Cirex). See LICENSE for details.
